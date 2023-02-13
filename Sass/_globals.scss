@@ -1,0 +1,194 @@
+@mixin menu-text{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin secciones{
+    width: 100%;
+    margin: auto;
+    padding: 3rem;
+    max-width: 992px;
+}
+
+
+html{
+    min-width: 100vw;
+}
+
+body{
+    padding: 0;
+    margin:0;
+}
+
+.navegador {
+    
+    position:fixed;
+    background-color: white;
+    height: 6.5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.41);
+
+    .nav-uno{
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        img{
+            width: 4rem;
+        }
+    
+        .nav-separador{
+            margin: 1rem 0.25rem 0 0.25rem;
+            height: 1.5rem;
+            width: 1px;
+            background-color: gray;
+        }
+    
+        h6{
+            padding-top: 0.75rem;
+            font-size: 1.50rem;
+        }
+    }
+
+    .nav-botones{
+        margin-right: 2rem;
+        gap: 2rem;
+        display: flex;
+    }
+}
+
+.menu{
+    width: 100vw;
+    height: 50rem;
+    color: white;
+    background-image: url(../Img/pAGE\ copia.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    .menu-features{
+        @include secciones();
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h1{
+            font-size:5rem ;
+        }
+        p{
+            padding: 0 6rem;
+            font-size:1.5rem ;
+        }
+        .btn-menu{
+            display: flex;
+        }
+
+        .deslizar{
+            margin: 5rem 30rem 0rem;
+        }
+    }
+}
+
+.vista-previa{
+    @include secciones();
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+    .previa-features{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .previa-img{
+        img{
+            max-width: 40rem;
+        }
+    }
+
+}
+
+.previa-galeria{
+
+    @include secciones();
+    .textos{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .part-text1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .part-text2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+.galeria {
+    @include secciones();
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .imagenes-galeria{
+        display: flex;
+        width: 37.5rem;
+        height: 26.87rem ;
+        img{
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+            transition: .5s ease;
+            &:hover{
+                cursor: crosshair;
+                width:300px;
+                opacity:1;
+                filter: contrast(120%);
+            }
+        }
+    }
+}
+
+.notacion{
+    background-color: rgba(249, 234, 232, 0.988);
+    .notacion-1{
+        @include secciones();
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .declaracion{
+            font-size: 1.5rem;
+            text-align: center;
+            font-family: cursive;
+        }
+        img{
+            width: 20rem;
+        }
+
+        .copy{
+            font-size: 0.75rem;
+        }
+    }
+}
+
+.contador{
+    font-family: cursive;
+}

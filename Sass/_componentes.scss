@@ -1,0 +1,86 @@
+@mixin boton{
+    padding: 5px 10px;
+    border-radius: 0.2rem;
+}
+
+$color-principal:#22ce93;
+
+.intro{
+    @include boton();
+    color:gray;
+    background-color: white;
+    border:1px solid gray;
+
+    &:hover{
+        color:white;
+        background-color: black;
+    }
+}
+
+.registro{
+    @include boton();
+    background-color: $color-principal;
+    color:white;
+    border:none;
+
+    &:hover{
+        background-color: #1aeba2;
+    }
+}
+
+.btn-menu{
+    padding: 5px 20px;
+    border:1px solid white;
+    border-radius: 0.2rem;
+    color:white;
+    background-color: transparent;
+
+    &:hover{
+        background-color: white;
+        color:black;
+    }
+}
+
+.deslizar{
+    background-color: transparent;
+    color:white;
+    border:2px solid white;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+
+    i{
+        font-size: 1.5rem; 
+    }
+
+    &:hover{
+        background-color: white;
+        color:black;
+    }
+}
+
+.empezar{
+    @include boton();
+    border: 1px solid gray;
+    color: black;
+    background-color: transparent;
+    font-size: 1rem;
+    &:hover{
+        background-color:#0075af;
+        color: white;
+    }
+}
+
+.textos-conjuntos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 15rem;
+    h5{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 0.75rem;
+        color: #717070;
+    }
+}
