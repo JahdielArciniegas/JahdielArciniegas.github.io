@@ -79,6 +79,26 @@
 html {
   min-width: 100vw;
 }
+html p::selection {
+  background-color: #22ce93;
+  color: white;
+}
+html h3::selection {
+  background-color: #22ce93;
+  color: white;
+}
+html button::selection {
+  background-color: #22ce93;
+  color: white;
+}
+html h1::selection {
+  background-color: #22ce93;
+  color: white;
+}
+html h5::selection {
+  background-color: #22ce93;
+  color: white;
+}
 
 body {
   padding: 0;
@@ -87,9 +107,10 @@ body {
 
 .navegador {
   position: fixed;
+  z-index: 1;
   background-color: white;
   height: 6.5rem;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,7 +143,6 @@ body {
 }
 
 .menu {
-  width: 100vw;
   height: 50rem;
   color: white;
   background-image: url(../Img/pAGE\ copia.png);
@@ -168,34 +188,62 @@ body {
   align-items: center;
 }
 .vista-previa .previa-features {
+  width: 100%;
+  margin: auto;
+  padding: 3rem;
+  max-width: 992px;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
-.vista-previa .previa-img img {
-  max-width: 40rem;
-}
-
-.previa-galeria {
+.vista-previa .previa-img {
   width: 100%;
   margin: auto;
   padding: 3rem;
   max-width: 992px;
 }
-.previa-galeria .textos {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.vista-previa .previa-img img {
+  max-width: 40rem;
 }
-.previa-galeria .textos .part-text1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+
+.slider {
+  width: 100%;
+  margin: auto;
+  padding: 3rem;
+  max-width: 992px;
 }
-.previa-galeria .textos .part-text2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.slider h3 {
+  text-align: center;
+}
+.slider .previa-galeria {
+  display: grid;
+  grid-template-columns: 50px max-content 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.slider .previa-galeria .textos {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.slider .previa-galeria .textos .textos-conjuntos {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1.5s;
+}
+.slider .previa-galeria .textos .textos-conjuntos--show {
+  opacity: 1;
+  pointer-events: unset;
+}
+.slider .previa-galeria .flechas {
+  cursor: pointer;
+  font-size: 2rem;
+}
+.slider .previa-galeria .flechas:nth-of-type(2) {
+  justify-self: end;
 }
 
 .galeria {
@@ -239,6 +287,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.notacion .notacion-1 .contador {
+  font-size: 0.9rem;
+}
 .notacion .notacion-1 .declaracion {
   font-size: 1.5rem;
   text-align: center;
@@ -251,8 +302,101 @@ body {
   font-size: 0.75rem;
 }
 
-.contador {
-  font-family: cursive;
+@media (max-width: 768px) {
+  .navegador {
+    height: 3rem;
+    max-width: 100vw;
+    background-color: white;
+  }
+  .navegador .nav-uno {
+    margin-left: 1rem;
+  }
+  .navegador .nav-uno img {
+    display: none;
+  }
+  .navegador .nav-uno h6 {
+    font-size: 1.25rem;
+  }
+  .navegador .nav-botones .intro {
+    display: none;
+  }
+  .navegador .nav-botones .registro {
+    display: none;
+  }
+  .menu {
+    height: 25rem;
+    background-image: none;
+    background-image: url(../Img/Page_2.png);
+    background-size: 100%;
+  }
+  .menu .menu-features h1 {
+    font-size: 1.5rem;
+  }
+  .menu .menu-features p {
+    font-size: 0.7rem;
+  }
+  .menu .menu-features .deslizar {
+    margin: 3rem 8rem 0rem;
+  }
+  .vista-previa {
+    display: flex;
+    flex-direction: column;
+  }
+  .vista-previa .previa-features {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  .vista-previa .previa-img {
+    padding: 2rem;
+  }
+  .vista-previa .previa-img img {
+    max-width: 100%;
+  }
+  .previa-galeria .textos .part-text1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .previa-galeria .textos .part-text2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .galeria {
+    display: flex;
+    text-align: center;
+  }
+  .galeria .imagenes-galeria {
+    padding: 0;
+    height: 25rem;
+    width: 20rem;
+  }
+  .galeria .imagenes-galeria img {
+    padding: 0;
+    height: 20rem;
+    width: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .galeria .imagenes-galeria img:hover {
+    width: 10rem;
+  }
+  .notacion .notacion-1 .contador {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .notacion .notacion-1 .declaracion {
+    font-size: 1rem;
+  }
+  .notacion .notacion-1 .img {
+    width: 5rem;
+  }
+  .notacion .notacion-1 .copy {
+    font-size: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
