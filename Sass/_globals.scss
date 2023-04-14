@@ -12,6 +12,11 @@
     max-width: 992px;
 }
 
+*{
+    label{
+        cursor: pointer;
+    }
+}
 
 html{
     min-width: 100vw;
@@ -96,11 +101,192 @@ body{
     }
 }
 
+.contenedor-modal1{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;left: 0;
+    background-color: rgba(93, 97, 94, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    .contenido-modal1{
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    .header-modal1{
+        margin: 0.5rem 0 2rem;
+        border-bottom: 1px solid #22ce93;
+        h3{
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+    .body-modal1{
+        p{
+            text-align: center;
+        }
+    }
+    .footer-modal1{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+#boton-modal1{
+    display: none;
+
+    &:checked ~ .contenedor-modal1{
+        display: flex;
+    }
+}
+
+.contenedor-modal2{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;left: 0;
+    background-color: rgba(93, 97, 94, 0.8);
+    background-image: url(../Img/How\ to\ Write\ the\ Sound\ of\ a\ Kiss\ -\ copia.png);
+    background-position: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    .contenido-modal2{
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    .header-modal2{
+        margin: 0.5rem 0 2rem;
+        border-bottom: 1px solid #22ce93;
+        h3{
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+    .body-modal2{
+        p{
+            text-align: center;
+        }
+    }
+    .footer-modal2{
+        display:flex;
+        justify-content: end;
+    }
+}
+
+#boton-modal2{
+    display: none;
+
+    &:checked ~ .contenedor-modal2{
+        display: flex;
+    }
+}
+
+.contenedor-modal3{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;left: 0;
+    background-color: rgba(93, 97, 94, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    .contenido-modal3{
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    .header-modal3{
+        margin: 0.5rem 0 2rem;
+        border-bottom: 1px solid #22ce93;
+        h3{
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+    .body-modal3{
+        p{
+            text-align: center;
+        }
+    }
+    .footer-modal3{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+#renovacion-modal{
+    display: none;
+
+    &:checked ~ .contenedor-modal3{
+        display: flex;
+    }
+}
+
+.contenedor-modal4{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;left: 0;
+    background-color: rgba(93, 97, 94, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    .contenido-modal4{
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    .header-modal4{
+        margin: 0.5rem 0 2rem;
+        border-bottom: 1px solid #22ce93;
+        h3{
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+    .body-modal4{
+        p{
+            text-align: center;
+        }
+    }
+    .footer-modal4{
+        display:flex;
+        justify-content: end;
+        align-items: center;
+    }
+}
+
+#previa-modal{
+    display: none;
+
+    &:checked ~ .contenedor-modal4{
+        display: flex;
+    }
+}
+
+
 .menu{
     
     height: 50rem;
     color: white;
-    background-image: url(../Img/pAGE\ copia.png);
+    background-image: url(../Img/Galeria/Icons3.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -108,6 +294,10 @@ body{
     justify-content: center;
     border-bottom: 1px solid gray;
     .menu-features{
+        background-image: url(../Img/Galeria/Icons3.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 50%;
         @include secciones();
         display: flex;
         flex-direction: column;
@@ -126,6 +316,9 @@ body{
             display: flex;
         }
 
+        audio{
+            margin-top: 3rem;
+        }
         .deslizar{
             margin: 5rem 30rem 0rem;
         }
@@ -225,7 +418,7 @@ body{
 }
 
 .notacion{
-    background-color: rgba(249, 234, 232, 0.988);
+    background-color: #5cbc9b88;
     .notacion-1{
         @include secciones();
         display: flex;
@@ -282,7 +475,7 @@ body{
     .menu {
         height: 25rem;
         background-image: none;
-        background-image: url(../Img/Page_2.png);
+        background-image: url(../Img/Galeria/Icons3.jpg);
         background-size: 100%;
 
         

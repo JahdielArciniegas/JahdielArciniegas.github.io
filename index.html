@@ -1,44 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestro Álbum</title>
-    <link rel="icon" href="Img/Icons1.png">
+    <link rel="icon" href="Img/LogoAgrandado.png">
     <link rel="stylesheet" href="Css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body>
     <nav class="navegador ">
-        <div class="nav-uno"><img src="Img/Icons1.png"/>
+        <div class="nav-uno"><img src="Img/LogoAgrandado.png"/>
             <div class="nav-separador"></div>
             <h6 class="display-6">Una Aventura Juntos</h6>
         </div>
-        <div class="nav-botones d-flex">
-            <button class="intro">Te Amo Mucho</button>
-            <button class="registro">Besitos gratis</button>
+        <div class="nav-botones">
+            <button class="intro">
+                <label for="boton-modal1">Te amo mucho</label>
+            </button>
+            <button class="registro">
+                <label for="boton-modal2">Besitos gratis</label>
+            </button>
         </div>
     </nav>
+    <input type="checkbox" id="boton-modal1">
+    <div class="contenedor-modal1">
+        <div class="contenido-modal1">
+            <div class="header-modal1">
+                <h3>Eres todo lo que siempre he Anhelado</h3>
+            </div>
+            <div class="body-modal1">
+                <p>Te amo hasta el infinito y mas allá...</p>
+            </div>
+            <div class="footer-modal1">
+                <p>...Corre como el viento tiroalblanco Ajua! <button class="registro"><label for="boton-modal1">Ajua!</label></button></p>
+            </div>
+        </div>
+    </div>
+    <input type="checkbox" id="boton-modal2">
+    <div class="contenedor-modal2">
+        <div class="contenido-modal2">
+            <div class="header-modal2">
+                <h3>Muchos Besitos:3</h3>
+            </div>
+            <div class="body-modal2">
+                <p>Para lo mas hermoso que tiene mi vida &lt3</p>
+            </div>
+            <div class="footer-modal2">
+                <p><button class="registro"><label for="boton-modal2">Cerrar</label></button></p>
+            </div>
+        </div>
+    </div>
     <section class="menu">
         <div class="menu-features">
-            <h1 class="title display-6">Nuestro Primer Mitaniversario</h1>
+            <h1 class="title display-6">Otro mes mas a tu lado &lt3</h1>
             <p class="menu-desc">Gracias por estos meses a mi lado has sido una bendicion de Dios para mi vida.</p>
-            <button class="btn-menu">Renovación</button>
-            <button class="deslizar"><i class="bi bi-chevron-down"></i></button>
+            <button class="btn-menu"><label for="renovacion-modal">Renovación</label></button>
+            <audio src="Img/y2mate.com - Jósean Log  Beso Lyric Video.mp3" autoplay controls loop></audio>
         </div>
     </section>
+    <input type="checkbox" id="renovacion-modal">
+    <div class="contenedor-modal3">
+        <div class="contenido-modal3">
+            <div class="header-modal3">
+                <h3>Felicidades tienes a tu bobo pa' rato &lt3</h3>
+            </div>
+            <div class="body-modal3">
+                <p>Tienes contrato hasta = &#8734;</p>
+            </div>
+            <div class="footer-modal3">
+                <button class="registro"><label for="renovacion-modal">Salir</label></button>
+                <p>Solo de aqui porque de mi nunca saldras:3</p>
+            </div>
+        </div>
+    </div>
     <section class="vista-previa">
         <div class="previa-features">
             <h3 class="display-6" >Y si me sacas una sonrisa...</h3>
             <p>...Solo quisiera devolverte una pequeña parte de mi felicidad a través de cada regalo mi amor,y como las sonrisas son eternas,mis regalos tambien.</p>
-            <button class="empezar">Eres Lo Mejor</button>
+            <button class="empezar"><label for="previa-modal">Eres lo Mejor</label></button>
         </div>
         <div class="previa-img">
             <img src="Img/collage.png" alt="collage">
         </div>
     </section>
+    <input type="checkbox" id="previa-modal">
+    <div class="contenedor-modal4">
+        <div class="contenido-modal4">
+            <div class="header-modal4">
+                <h3>Porque no existe ni habra...</h3>
+            </div>
+            <div class="body-modal4">
+                <p>alguien con tu bella sonrisa, con tu hermoso cuerpo ni con tu bella personalidad</p>
+            </div>
+            <div class="footer-modal4">
+                <button class="registro"><label for="previa-modal">Eres mi todo</label></button>
+            </div>
+        </div>
+    </div>
     <hr>
     <div class="slider">
         <h3 class="titulo-slider p-5 display-3">Una aventura que nunca acabara</h3>
@@ -84,6 +145,10 @@
                     <h5 class="titulo-texto">Septimo mes 14/03/2023</h5>
                     <p class="descripcion-texto">"...A pesar de las olas que parecen imposibles de pasar, a pesar de esas tormentas que puedan haber más adelante, puedo ver nuestra fortaleza interior, y saber que haremos todo lo necesario para superlas, porque somos más fuertes cuando estamos juntos y es mi decisión ser más fuerte a tu lado, día tras día , y no quiero cambiarla..."</p>
                 </div>
+                <div class="textos-conjuntos" data-id="8">
+                    <h5 class="titulo-texto">Octavo mes 14/04/2023</h5>
+                    <p class="descripcion-texto">"Soy firme en mi creencia de que lo más bello de esta vida es aprender... y vaya que me encanta aprender cada parte de ti, y de tu pensar, sin duda para mí no hay descripción más bella de algo perfecto como la que da tu persona."</p>
+                </div>
             </div>
             <i class="bi bi-arrow-right-short flechas" id="after"></i>
         </section>
@@ -105,6 +170,7 @@
             <img src="Img/Galeria/MareDibujo.jpg" alt="10">
             <img src="Img/Galeria/stella.jpg" alt="11">
             <img src="Img/Galeria/Icons2.jpg" alt="12">
+            <img src="Img/Galeria/Icons3.jpg" alt="13">
         </div>
     </section>
     <hr>
@@ -112,7 +178,7 @@
         <div class="notacion-1">
             <p id="counter" class="contador"></p>
             <p class="declaracion display-6">"-La verdad no me quedan dudas de que han sido los meses en los que mas he entendido el significado de amor mutuo... gracias por demostrarme tu amor incondicional a pesar de tantos defectos que pudieramos tener, Mi amor por ti es eterno."</p>
-            <img src="Img/Icons1.png" alt="Icono-rompecabeza">
+            <img src="Img/LogoAgrandado.png" alt="Icono-rompecabeza">
             <p>hecho por Jahdiel Arciniegas - Para Legny Carrero</p>
             <p class="copy">todos los derechos están reservados - 2023 </p>
         </div>
