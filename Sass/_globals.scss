@@ -61,11 +61,53 @@ html{
             color:white;
         } 
     }
+
+    h6{
+        &::selection{
+            background-color: #22ce93;
+            color:white;
+        } 
+    }
 }
 
 body{
     padding: 0;
     margin:0;
+}
+
+.dark{
+    background-color: #00001a;
+    color:#fff;
+    .navegador{
+        background-color: #00001a;
+        .nav-botones{
+            .nav-botones1{
+                .intro{
+                    background-color: #00001a;
+                    color:#fff;
+                    
+                    &:hover{
+                        color: #00001a;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        .active{
+            .nav-botones1{
+                background-color: #00001a;
+            }
+        }
+    }
+    .vista-previa{
+        .empezar{
+            color: #fff;
+
+            &:hover{
+                background-color: #4e4c6b;
+            }
+        }
+    }
 }
 
 .navegador {
@@ -87,9 +129,15 @@ body{
         flex-direction: row;
         justify-content: center;
         
-        img{
-            width: 4rem;
+        button{
+            border: none;
+            background-color:transparent;
+            img{
+                width: 4rem;
+                cursor: pointer;
+            }
         }
+        
     
         .nav-separador{
             margin: 1rem 0.25rem 0 0.25rem;
@@ -304,7 +352,9 @@ body{
     color: white;
     background-image: url(../Img/Galeria/Icons3.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 90%;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.107);
     border-bottom: 1px solid gray;
     .menu-features{
         @include secciones();
@@ -326,6 +376,7 @@ body{
                 height: 47.1rem;
                 position: absolute;
                 display: flex;
+                border-radius: 2rem;
             }
         }
 
@@ -433,6 +484,12 @@ body{
 
 }
 
+.musica{
+    h1{
+        text-align: center;
+    }
+    
+}
 
 .slider{
     @include secciones();

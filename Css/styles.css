@@ -112,10 +112,39 @@ html h5::selection {
   background-color: #22ce93;
   color: white;
 }
+html h6::selection {
+  background-color: #22ce93;
+  color: white;
+}
 
 body {
   padding: 0;
   margin: 0;
+}
+
+.dark {
+  background-color: #00001a;
+  color: #fff;
+}
+.dark .navegador {
+  background-color: #00001a;
+}
+.dark .navegador .nav-botones .nav-botones1 .intro {
+  background-color: #00001a;
+  color: #fff;
+}
+.dark .navegador .nav-botones .nav-botones1 .intro:hover {
+  color: #00001a;
+  background-color: #fff;
+}
+.dark .navegador .active .nav-botones1 {
+  background-color: #00001a;
+}
+.dark .vista-previa .empezar {
+  color: #fff;
+}
+.dark .vista-previa .empezar:hover {
+  background-color: #4e4c6b;
 }
 
 .navegador {
@@ -136,8 +165,13 @@ body {
   flex-direction: row;
   justify-content: center;
 }
-.navegador .nav-uno img {
+.navegador .nav-uno button {
+  border: none;
+  background-color: transparent;
+}
+.navegador .nav-uno button img {
   width: 4rem;
+  cursor: pointer;
 }
 .navegador .nav-uno .nav-separador {
   margin: 1rem 0.25rem 0 0.25rem;
@@ -338,7 +372,9 @@ body {
   color: white;
   background-image: url(../Img/Galeria/Icons3.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 90%;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.107);
   border-bottom: 1px solid gray;
 }
 .menu .menu-features {
@@ -364,6 +400,7 @@ body {
   height: 47.1rem;
   position: absolute;
   display: flex;
+  border-radius: 2rem;
 }
 .menu .menu-features .features-menu {
   margin-top: 18rem;
@@ -464,6 +501,10 @@ body {
   position: absolute;
   max-width: 40rem;
   height: 20rem;
+}
+
+.musica h1 {
+  text-align: center;
 }
 
 .slider {

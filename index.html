@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="mode">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
-<body>
+<body class="">
     <!--Navegador-->
     <nav class="navegador ">
-        <div class="nav-uno"><img src="Img/LogoAgrandado.png"/>
+        <div class="nav-uno">
+            <button  id="logo"><img src="Img/LogoAgrandado.png"/></button> 
             <div class="nav-separador"></div>
             <h6 class="display-6">Una Aventura Juntos</h6>
         </div>
@@ -64,6 +65,7 @@
     <section class="menu">
         <div class="menu-features">
             <h1 class="title-feature display-3">Novedades</h1>
+            <span class="img-fondo"></span>
             <!--Imagenes de Fondo-->
             <div class="imgs-menu">
                 <div class="imagen-menu active"></div>
@@ -78,25 +80,25 @@
                 <div class="feature active">
                     <h6>Bienvenida a nuestra aventura</h6>
                     <span></span>
-                    <p>9 meses del comienzo y aun ando super enamorado de esa sonrisa hermosa</p>
+                    <p>10 meses del comienzo y aun ando super enamorado de esa sonrisa hermosa</p>
                     <audio src="Img/Musica/Cada Día  Jesus Adrian Romero Feat Pecos Romero.mp3" controls loop></audio>
                 </div>
                 <div class="feature">
-                    <h6>Nueva Musica</h6>
+                    <h6>Siente la Musica</h6>
                     <span></span>
                     <p>¿Que seria el mundo sin música?...No lo sé...Es mejor solo disfrutarla c:</p>
                     <audio src="Img/Musica/Jósean Log  Beso Lyric Video.mp3" controls loop></audio>
                 </div>
                 <div class="feature">
-                    <h6>Optimización de carga</h6>
+                    <h6>Nuevo modo Oscuro (beta)</h6>
                     <span></span>
-                    <p>Se han optimizado la mayoria de imagenes de la página</p>
+                    <p>Toca la imagen de nuestra pagina y disfruta en de la nueva modalidad</p>
                     <audio src="Img/Musica/Macaco  Coincidir Official Music Video.mp3" controls loop></audio>
                 </div>
                 <div class="feature">
-                    <h6>Nuevo indice responsive</h6>
+                    <h6>Se vienen grandes sorpresas</h6>
                     <span></span>
-                    <p>Para ver todos los modales agregados en la actualización anterior</p>
+                    <p>Debido a no concretar muchos mini proyectos hemos tenido que agregarlas en actualizaciones futuras</p>
                     <audio src="Img/Musica/Miel  Lauri Garcia.mp3" controls loop></audio>
                 </div>
                 <div class="feature">
@@ -159,6 +161,11 @@
         </div>
     </div>
     <hr>
+    <!--Categoria Musica-->
+    <section class="musica">
+        <h1>PROXIMAMENTE NUEVA ZONA...</h1>
+    </section>
+    <hr>
     <!--Slider-->
     <div class="slider">
         <h3 class="titulo-slider p-5 display-3">Una aventura que nunca acabara</h3>
@@ -212,6 +219,10 @@
                     <h5 class="titulo-texto">Noveno mes 14/05/2023</h5>
                     <p class="descripcion-texto">"Es fascinante la compenetacion del ser humano, una compenetracion tan grande como la de notas en una armonia, un conjunto de notas que he aprendido contigo..."</p>
                 </div>
+                <div class="textos-conjuntos" data-id="10">
+                    <h5 class="titulo-texto">Decimo mes 14/06/2023</h5>
+                    <p class="descripcion-texto">"Es que la vida te entrega su belleza algún día, hay un día que esta escrito en tu destino y te entrega toda una obra de arte, un cuento que parece fantasía, pero es nada más y nada menos que la realidad..."</p>
+                </div>
             </div>
             <i class="bi bi-arrow-right-short flechas" id="after"></i>
         </section>
@@ -236,6 +247,7 @@
             <img src="Img/Galeria/Icons2.jpg" alt="12">
             <img src="Img/Galeria/Icons3.jpg" alt="13">
             <img src="Img/Galeria/gamers.jpg" alt="14">
+            <img src="Img/Galeria/MuchoAmor.jpg" alt="15">
         </div>
     </section>
     <hr>
@@ -253,6 +265,7 @@
 <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
 ></script>
+<script src="Js/modoOscuro.js"></script>
 <script src="Js/contadorslider.js" class="contador"></script>
 <script src="Js/indice.js"></script>
 <script src="Js/novedades.js"></script>
