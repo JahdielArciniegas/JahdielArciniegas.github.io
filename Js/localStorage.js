@@ -22,14 +22,14 @@ const spidermanATV = new movieC("Spiderman ATSV","img/peliculas/spiderman-atv.jp
 const superMario = new movieC("Super Mario Bros","img/peliculas/Super_Mario_Bros.jpg","0","0","6");
 const tetris = new movieC("Tetris","img/peliculas/Tetris.jpg","0","0","7");
 const transformersB = new movieC("Transformers EDDLB","img/peliculas/Transformers-eddlb.jpg","0","0","8");
-localStorage.setItem("objeto1", JSON.stringify(gatoCB));
-localStorage.setItem("objeto2", JSON.stringify(knivesOT));
-localStorage.setItem("objeto3", JSON.stringify(pinochoGT));
-localStorage.setItem("objeto4", JSON.stringify(singT));
-localStorage.setItem("objeto5", JSON.stringify(spidermanATV));
-localStorage.setItem("objeto6", JSON.stringify(superMario));
-localStorage.setItem("objeto7", JSON.stringify(tetris));
-localStorage.setItem("objeto8", JSON.stringify(transformersB));
+// localStorage.setItem("objeto1", JSON.stringify(gatoCB));
+// localStorage.setItem("objeto2", JSON.stringify(knivesOT));
+// localStorage.setItem("objeto3", JSON.stringify(pinochoGT));
+// localStorage.setItem("objeto4", JSON.stringify(singT));
+// localStorage.setItem("objeto5", JSON.stringify(spidermanATV));
+// localStorage.setItem("objeto6", JSON.stringify(superMario));
+// localStorage.setItem("objeto7", JSON.stringify(tetris));
+// localStorage.setItem("objeto8", JSON.stringify(transformersB));
 
 
 const seriesL = {
@@ -53,11 +53,11 @@ const kNY = new seriesC("Kimetsu no Yaiba","img/series/KNY-arco-2.jpg","0","0","
 const moriartyP = new seriesC("Yuukoku no Moriarty","img/series/Moriarty-on-Patriot.jpg","0","0","3");
 const sherlock = new seriesC("Sherlock BBC","img/series/Sherlock.jpg","0","0","4");
 const spyXF = new seriesC("Spy x Family","img/series/spy-x-family.jpg","0","0","5");
-localStorage.setItem("objetos1", JSON.stringify(blueL));
-localStorage.setItem("objetos2", JSON.stringify(kNY));
-localStorage.setItem("objetos3", JSON.stringify(moriartyP));
-localStorage.setItem("objetos4", JSON.stringify(sherlock));
-localStorage.setItem("objetos5", JSON.stringify(spyXF));
+// localStorage.setItem("objetos1", JSON.stringify(blueL));
+// localStorage.setItem("objetos2", JSON.stringify(kNY));
+// localStorage.setItem("objetos3", JSON.stringify(moriartyP));
+// localStorage.setItem("objetos4", JSON.stringify(sherlock));
+// localStorage.setItem("objetos5", JSON.stringify(spyXF));
 
 function mostrarPantallaS() {
     const objetosAlmacenadosS = [];
@@ -231,49 +231,3 @@ function mostrarPantallaP() {
     mostrarPantallaP();
 })();
 
-
-
-
-
-//!Series
-
-{/* <div class="contenedor-series">
-                <div class="serie">
-                    <h2 class="nombre-serie"></h2>
-                    <span class="img-serie"></span>
-                </div>
-                <div class="puntajes">
-                    <div class="serie-yo">
-                        <h4 class="nombre-yo-s">Jadi</h4>
-                        <p class="puntaje-yo-s"><input type="text" disabled></p>
-                        <button class="editar-puntaje-s1 registro">editar</button>
-                    </div>
-                    <div class="serie-mare">
-                        <h4 class="nombre-mare-s">Mare</h4>
-                        <p class="puntaje-mare-s"><input type="text" disabled></p>
-                        <button class="editar-puntaje-s2 registro">editar</button>
-                    </div>
-                </div>
-            </div> */
-}
-
-//!Peliculas
-
-{/* <div class="contenedor-peliculas">
-                <div class="pelicula">
-                    <h2 class="nombre-pelicula">Tetris</h2>
-                    <span class="img-pelicula"><img src="Img/Galeria/regalo mare.jpg" alt="prueba"></span>
-                </div>
-                <div class="puntajes">
-                    <div class="pelicula-yo">
-                        <h4 class="nombre-yo-p">Jadi</h4>
-                        <form class="puntaje-yo-p"><input type="text" disabled></form>
-                        <button class="editar-puntaje-p-1 registro">editar</button>
-                    </div>
-                    <div class="pelicula-mare">
-                        <h4 class="nombre-mare-p">Mare</h4>
-                        <p class="puntaje-mare-p"><input type="text" disabled></p>
-                        <button class="editar-puntaje-p2 registro">editar</button>
-                    </div>
-                </div>
-            </div> */}
