@@ -80,25 +80,25 @@
                 <div class="feature active">
                     <h6>Bienvenida a nuestra aventura</h6>
                     <span></span>
-                    <p>10 meses del comienzo y aun ando super enamorado de esa sonrisa hermosa</p>
+                    <p>11 meses del comienzo y aun ando super enamorado de esa sonrisa hermosa</p>
                     <audio src="Img/Musica/Cada Día  Jesus Adrian Romero Feat Pecos Romero.mp3" controls loop></audio>
                 </div>
                 <div class="feature">
-                    <h6>Siente la Musica</h6>
+                    <h6>Contador de dias juntos actualizado</h6>
                     <span></span>
-                    <p>¿Que seria el mundo sin música?...No lo sé...Es mejor solo disfrutarla c:</p>
+                    <p>Por fin, por fin logre que ese bendito contador se actualizara cada segundo</p>
                     <audio src="Img/Musica/Jósean Log  Beso Lyric Video.mp3" controls loop></audio>
                 </div>
                 <div class="feature">
-                    <h6>Nuevo modo Oscuro (beta)</h6>
+                    <h6>Contador para la cumpleañera</h6>
                     <span></span>
-                    <p>Toca la imagen de nuestra pagina y disfruta en de la nueva modalidad</p>
+                    <p>Falta poco para el mejor dia del universo en el que naciste :3</p>
                     <audio src="Img/Musica/Macaco  Coincidir Official Music Video.mp3" controls loop></audio>
                 </div>
                 <div class="feature">
-                    <h6>Se vienen grandes sorpresas</h6>
+                    <h6>Nueva seccion de Peliculas y Series(Modo beta)</h6>
                     <span></span>
-                    <p>Debido a no concretar muchos mini proyectos hemos tenido que agregarlas en actualizaciones futuras</p>
+                    <p>En el cual podremos puntuar todas las peliculas y series que hemos visto</p>
                     <audio src="Img/Musica/Miel  Lauri Garcia.mp3" controls loop></audio>
                 </div>
                 <div class="feature">
@@ -161,9 +161,22 @@
         </div>
     </div>
     <hr>
-    <!--Categoria Musica-->
-    <section class="musica">
-        <h1>PROXIMAMENTE NUEVA ZONA...</h1>
+    <!--Categoria Cumpleaños-->
+    <section class="cuenta-regresiva">
+        <h1 class="titulo-regresiva p-5 display-3">Cuanto falta para que cumpla mi princesa</h1>
+        <img src="Img/pngegg copia.png" class="imagen-regresiva"></img>
+        <div class="titulos-contador">
+            <p>dias</p>
+            <p>horas</p>
+            <p>minutos</p>
+            <p>segundos</p>
+        </div>
+        <div class="contador-regresivo">
+            <p class="dias" id="contador-dias"></p>
+            <p class="horas" id="contador-horas"></p>
+            <p class="minutos" id="contador-minutos"></p>
+            <p class="segundos" id="contador-segundos"></p>
+        </div>
     </section>
     <hr>
     <!--Slider-->
@@ -223,6 +236,10 @@
                     <h5 class="titulo-texto">Decimo mes 14/06/2023</h5>
                     <p class="descripcion-texto">"Es que la vida te entrega su belleza algún día, hay un día que esta escrito en tu destino y te entrega toda una obra de arte, un cuento que parece fantasía, pero es nada más y nada menos que la realidad..."</p>
                 </div>
+                <div class="textos-conjuntos" data-id="11">
+                    <h5 class="titulo-texto">Undecimo mes 14/06/2023</h5>
+                    <p class="descripcion-texto">"...Miro el cielo y siento como la brisa se esparce sobre mi rostro, y tu melodiosa voz en mi mente es el acompañante perfecto a cada uno de esos momentos, la descripción perfecta de cada bello momento de la vida está en ti, mi dulce niña...."</p>
+                </div>
             </div>
             <i class="bi bi-arrow-right-short flechas" id="after"></i>
         </section>
@@ -248,9 +265,66 @@
             <img src="Img/Galeria/Icons3.jpg" alt="13">
             <img src="Img/Galeria/gamers.jpg" alt="14">
             <img src="Img/Galeria/MuchoAmor.jpg" alt="15">
+            <img src="Img/Galeria/intento-blancoynegro.jpg" alt="16">
         </div>
     </section>
     <hr>
+    <section class="peliculas-series">
+        <h1 class="p-5 display-3 titulo-serpel">Peliculas y Series que hemos visto</h1>
+        <div class="column-1">
+            <div class="peliculas" id="movies">
+                <h1>Peliculas</h1>
+            </div>
+            <div class="series" id="series">
+                <h1>Series</h1>
+            </div>
+        </div>
+        <div class="column-2" id="movie">
+            <i class="bi bi-arrow-left-short flechas1" id="atrasP"></i>
+            <div class="contenedor-peliculas" data-id="1">
+                <div class="pelicula">
+                    <h2 class="nombre-pelicula" id="name-movie"></h2>
+                    <span class="img-pelicula" id="imgn-movie"></span>
+                </div>
+                <div class="puntajes">
+                    <div class="pelicula-yo">
+                        <h4 class="nombre-yo-p">Jadi</h4>
+                        <p class="puntaje-yo-p" id="puntaje-3"><input type="text" disabled></p>
+                        <button class="editar-puntaje-p-1 registro" id="editar3">editar</button>
+                    </div>
+                    <div class="pelicula-mare">
+                        <h4 class="nombre-mare-p">Mare</h4>
+                        <p class="puntaje-mare-p" id="puntaje-4"><input type="text" disabled></p>
+                        <button class="editar-puntaje-p2 registro" id="editar4">editar</button>
+                    </div>
+                </div>
+            </div>
+            <i class="bi bi-arrow-right-short flechas1" id="adelanteP"></i>
+        </div> 
+        <div class="column-3" id="serie">
+            <i class="bi bi-arrow-left-short flechas2" id="atrasS"></i>
+            <div class="contenedor-series" data-id="1">
+                <div class="serie">
+                    <h2 class="nombre-serie" id="name-serie"></h2>
+                    <span class="img-serie" id="imgn-serie"></span>
+                </div>
+                <div class="puntajes">
+                    <div class="serie-yo">
+                        <h4 class="nombre-yo-s">Jadi</h4>
+                        <p class="puntaje-yo-s" id="puntaje-1"><input type="text" disabled></p>
+                        <button class="editar-puntaje-s1 registro" id="editar1">editar</button>
+                    </div>
+                    <div class="serie-mare">
+                        <h4 class="nombre-mare-s">Mare</h4>
+                        <p class="puntaje-mare-s" id="puntaje-2"><input type="text" disabled></p>
+                        <button class="editar-puntaje-s2 registro" id="editar2">editar</button>
+                    </div>
+                </div>
+            </div>
+            <i class="bi bi-arrow-right-short flechas2" id="adelanteS"></i>
+        </div>   
+    </section>
+    <p class="separador"></p>
     <!--Footer-->
     <footer class="notacion">
         <div class="notacion-1">
@@ -269,4 +343,8 @@
 <script src="Js/contadorslider.js" class="contador"></script>
 <script src="Js/indice.js"></script>
 <script src="Js/novedades.js"></script>
+<script src="Js/cuentaRegresiva.js"></script>
+<script src="Js/peliculasSeries.js"></script>
+<script src="Js/localStorage.js"></script>
+<script src="Js/cambiarPuntacion.js"></script>
 </html>

@@ -140,6 +140,18 @@ body {
 .dark .navegador .active .nav-botones1 {
   background-color: #00001a;
 }
+.dark .contenedor-modal1 .contenido-modal1 {
+  background-color: #4e4c6b;
+}
+.dark .contenedor-modal2 .contenido-modal2 {
+  background-color: #4e4c6b;
+}
+.dark .contenedor-modal3 .contenido-modal3 {
+  background-color: #4e4c6b;
+}
+.dark .contenedor-modal4 .contenido-modal4 {
+  background-color: #4e4c6b;
+}
 .dark .vista-previa .empezar {
   color: #fff;
 }
@@ -503,8 +515,41 @@ body {
   height: 20rem;
 }
 
-.musica h1 {
+.cuenta-regresiva {
+  width: 100%;
+  margin: auto;
+  padding: 3rem;
+  max-width: 992px;
+  height: 40rem;
+  justify-content: center;
+}
+.cuenta-regresiva .titulo-regresiva {
   text-align: center;
+}
+.cuenta-regresiva .imagen-regresiva {
+  position: absolute;
+  width: 900px;
+  height: 200px;
+  z-index: -1;
+}
+.cuenta-regresiva .titulos-contador {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;
+  color: #fff;
+}
+.cuenta-regresiva .contador-regresivo {
+  margin-top: -2rem;
+  margin-left: -2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  gap: 2rem;
+  color: #fff;
 }
 
 .slider {
@@ -574,6 +619,202 @@ body {
   width: 300px;
   opacity: 1;
   filter: contrast(120%);
+}
+
+.peliculas-series {
+  height: 40rem;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.peliculas-series .titulo-serpel {
+  grid-area: 1/1/2/7;
+  text-align: center;
+  margin-top: -5rem;
+}
+.peliculas-series .column-1 {
+  grid-area: 2/1/5/4;
+  gap: 20px;
+}
+.peliculas-series .column-1 .peliculas {
+  cursor: pointer;
+  padding-left: 400px;
+  background-color: #22ce93;
+  color: #fff;
+  width: 37rem;
+  border-radius: 4rem;
+  margin-left: -1rem;
+}
+.peliculas-series .column-1 .peliculas:hover {
+  margin-bottom: 1rem;
+  display: flex;
+  background-color: #1aeba2;
+  height: 60px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.peliculas-series .column-1 .peliculas.on {
+  padding-left: 150px;
+  width: 25rem;
+}
+.peliculas-series .column-1 .peliculas.off {
+  padding-left: 50px;
+  width: 13.5rem;
+}
+.peliculas-series .column-1 .series {
+  cursor: pointer;
+  padding-left: 400px;
+  background-color: #22ce93;
+  color: #fff;
+  width: 37rem;
+  border-radius: 4rem;
+  margin-left: -1rem;
+}
+.peliculas-series .column-1 .series:hover {
+  margin-bottom: 1rem;
+  display: flex;
+  background-color: #1aeba2;
+  height: 60px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.peliculas-series .column-1 .series.on {
+  padding-left: 150px;
+  width: 25rem;
+}
+.peliculas-series .column-1 .series.off {
+  padding-left: 50px;
+  width: 13.5rem;
+}
+.peliculas-series .column-2 {
+  display: none;
+}
+.peliculas-series .column-2.activado {
+  margin-left: 30rem;
+  margin-top: -2rem;
+  display: grid;
+  grid-template-columns: 50px max-content 50px;
+}
+.peliculas-series .column-2.activado .contenedor-peliculas .nombre-pelicula {
+  text-align: center;
+  font-size: 25px;
+}
+.peliculas-series .column-2.activado .contenedor-peliculas .img-pelicula img {
+  width: 15rem;
+  height: 20rem;
+}
+.peliculas-series .column-2.activado .contenedor-peliculas .puntajes {
+  display: flex;
+  justify-content: space-around;
+}
+.peliculas-series .column-2.activado .contenedor-peliculas .puntajes .pelicula-yo {
+  width: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.peliculas-series .column-2.activado .contenedor-peliculas .puntajes .pelicula-yo .nombre-yo-p {
+  text-align: center;
+}
+.peliculas-series .column-2.activado .contenedor-peliculas .puntajes .pelicula-yo .puntaje-yo-p input {
+  width: 50px;
+  text-align: center;
+}
+.peliculas-series .column-2.activado .contenedor-peliculas .puntajes .pelicula-mare {
+  width: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.peliculas-series .column-2.activado .contenedor-peliculas .puntajes .pelicula-mare .nombre-mare-p {
+  text-align: center;
+}
+.peliculas-series .column-2.activado .contenedor-peliculas .puntajes .pelicula-mare .puntaje-mare-p input {
+  width: 50px;
+  text-align: center;
+}
+.peliculas-series .column-2 .flechas1 {
+  cursor: pointer;
+  margin-top: 13rem;
+  font-size: 2rem;
+}
+.peliculas-series .column-2 .flechas1:nth-of-type(2) {
+  justify-self: end;
+}
+.peliculas-series .column-3 {
+  display: none;
+}
+.peliculas-series .column-3.activado {
+  margin-left: 30rem;
+  margin-top: -2rem;
+  display: grid;
+  grid-template-columns: 50px max-content 50px;
+}
+.peliculas-series .column-3.activado .contenedor-series .nombre-serie {
+  text-align: center;
+  font-size: 25px;
+}
+.peliculas-series .column-3.activado .contenedor-series .img-serie {
+  display: flex;
+  justify-content: center;
+}
+.peliculas-series .column-3.activado .contenedor-series .img-serie img {
+  width: 15rem;
+  height: 20rem;
+}
+.peliculas-series .column-3.activado .contenedor-series .puntajes {
+  display: flex;
+  justify-content: space-around;
+}
+.peliculas-series .column-3.activado .contenedor-series .puntajes .serie-yo {
+  width: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.peliculas-series .column-3.activado .contenedor-series .puntajes .serie-yo .nombre-yo-s {
+  text-align: center;
+}
+.peliculas-series .column-3.activado .contenedor-series .puntajes .serie-yo .puntaje-yo-s input {
+  width: 50px;
+  text-align: center;
+}
+.peliculas-series .column-3.activado .contenedor-series .puntajes .serie-mare {
+  width: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.peliculas-series .column-3.activado .contenedor-series .puntajes .serie-mare .nombre-mare-s {
+  text-align: center;
+}
+.peliculas-series .column-3.activado .contenedor-series .puntajes .serie-mare .puntaje-mare-s input {
+  width: 50px;
+  text-align: center;
+}
+.peliculas-series .column-3 .flechas2 {
+  cursor: pointer;
+  margin-top: 13rem;
+  font-size: 2rem;
+}
+.peliculas-series .column-3 .flechas2:nth-of-type(2) {
+  justify-self: end;
+}
+
+.separador {
+  margin: 0;
+  height: 1px;
+  width: 100vw;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.41);
 }
 
 .notacion {
@@ -748,6 +989,9 @@ body {
     height: 20%;
     margin-bottom: 4rem;
   }
+  .cuenta-regresiva {
+    display: none;
+  }
   .previa-galeria .textos .part-text1 {
     flex-direction: column;
     justify-content: center;
@@ -761,6 +1005,9 @@ body {
     align-items: center;
     text-align: center;
     gap: 1rem;
+  }
+  .peliculas-series {
+    display: none;
   }
   .galeria {
     display: flex;
